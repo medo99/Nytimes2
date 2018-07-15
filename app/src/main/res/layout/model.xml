@@ -4,48 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/card_elevation"
-    android:layout_marginEnd="@dimen/card_margin"
-    android:layout_marginLeft="@dimen/card_margin"
-    android:layout_marginRight="@dimen/card_margin"
-    android:layout_marginStart="@dimen/card_margin"
-    android:layout_marginTop="@dimen/normal_padding"
+
     app:cardElevation="@dimen/card_elevation">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/drawable_list_item">
-
-        <!-- News block -->
-        <RelativeLayout
-            android:id="@+id/relativeItemImage"
-            android:layout_width="match_parent"
-            android:layout_height="180sp">
+        >
 
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="347dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:padding="10dp"
-                android:text="title"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="57dp"
+            android:fontFamily="@font/karlabold"
+            android:padding="10dp"
+            android:text="title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBlack"
+
+            android:textStyle="bold" />
 
 
-            <TextView
-                android:id="@+id/byline"
-                android:layout_width="199dp"
-                android:layout_height="88dp"
-                android:layout_alignBaseline="@+id/published_date"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="0dp"
-                android:text="by"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textStyle="italic" />
+        <TextView
+            android:id="@+id/byline"
+            android:layout_width="189dp"
+            android:layout_height="88dp"
+            android:layout_alignBaseline="@+id/published_date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="58dp"
+            android:layout_marginStart="58dp"
+            android:text="by"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic" />
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -53,20 +47,27 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="17dp"
-                android:src="@drawable/arrow" />
+                android:src="@drawable/arrow"
+                android:layout_alignParentRight="true" />
 
-            <TextView
-                android:id="@+id/published_date"
-                android:layout_width="165dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_below="@+id/title"
-                android:lines="3"
-                android:padding="10dp"
-                android:text="published_date....................."
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/published_date"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/title"
+            android:lines="3"
+            android:padding="10dp"
+            android:text="published_date....................."
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <!-- Rightend Arrow -->
         </RelativeLayout>
-    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        app:srcCompat="@android:drawable/radiobutton_off_background" />
 </android.support.v7.widget.CardView>
