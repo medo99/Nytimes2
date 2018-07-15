@@ -20,7 +20,7 @@ import android.view.MenuItem;
 import com.nytimes.sections.articles.serveice.JSONDownloader;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
+/* here the link for getting data from web service */
     String jsonURL="https://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=f4fa5bfebfe740838d5b92c037f4d4f6";
     public static boolean mTwoPane;
 
@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_send) {
 
         }
-
+/* here impelment  the drawer list for making the left menu  */
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

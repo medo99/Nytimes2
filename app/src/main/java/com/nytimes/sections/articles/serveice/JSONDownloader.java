@@ -21,7 +21,7 @@ public class JSONDownloader extends AsyncTask<Void,Void,String> {
     RecyclerView rv;
 
     ProgressDialog pd;
-
+/* this class for controler download the json and process the connection to web servic with async task class*/
     public JSONDownloader(Context c, String jsonURL, RecyclerView rv) {
         this.c = c;
         this.jsonURL = jsonURL;

@@ -23,7 +23,7 @@ public class JSONParser extends AsyncTask<Void,Void,Boolean>{
 
     ProgressDialog pd;
     ArrayList<Article> articles =new ArrayList<>();
-
+/* this class for controler  parse the json after it back from the webservice */
     public JSONParser(Context c, String jsonData, RecyclerView rv) {
         this.c = c;
         this.jsonData = jsonData;
